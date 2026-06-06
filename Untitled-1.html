@@ -1,0 +1,101 @@
+<! DOCTYPE html>
+<html lang="eng"
+body{ 
+    margin:0; 
+    font-family: Arial, sans-serif;
+     background-color:#ffe4f2;
+      color:#5c3a4a; 
+    } 
+      
+header{ 
+    background-color:#ffb6d9;
+     text-align:center;
+      padding:20px; 
+    }
+
+    main{
+         padding:20px;
+         } 
+    p{ 
+        line-height:1.6;
+     } 
+     
+footer{
+     background-color:#ffb6d9; 
+     text-align:center;
+      padding:15px;
+       margin-top:20px;
+     }
+     
+     /* Кнопка главной страницы */
+      .btn-home{
+         background-color:#ff69b4;
+        color:white;
+        padding:10px 15px;
+        text-decoration:none;
+        border-radius:10px;
+        transition:0.5s; 
+    } 
+    .btn-home:hover{
+        background-color:#ff1493;
+         transform:scale(1.1);
+         } 
+         
+    /* Кнопка галереи */ 
+    .btn-gallery{
+        background-color:#ff85c1;
+        color:white; padding:10px 15px; 
+        text-decoration:none; 
+        border-radius:10px; 
+        transition:0.5s; 
+    } 
+    .btn-gallery:hover{ 
+        box-shadow:0 0 10px hotpink;
+     }
+     
+     /* Кнопка контактов */ 
+     .btn-contact{ 
+        background-color:#ff99cc; 
+        color:white; 
+        padding:10px 15px; 
+        text-decoration:none; 
+        border-radius:10px; 
+        transition:0.5s; 
+    }
+     .btn-contact:hover{
+        letter-spacing:2px; 
+    }
+     /* Простая анимация */ 
+     .title{ animation:move 3s infinite; }
+      @keyframes move{
+         0%{transform:translateY(0);}
+          50%{transform:translateY(-8px);}
+           100%{transform:translateY(0);} 
+        }
+         /* Изображение способом №1 */ 
+         .picture{
+             width:300px; 
+             max-width:100%;
+              display:block;
+               margin:auto; 
+            } 
+            /* Изображение способом №2 */
+             .background-picture{
+                 width:300px;
+                  height:250px;
+                   background-image:url("drawing2.jpg"); 
+                   background-size:cover;
+                    background-position:center;
+                     margin:auto; 
+                    } 
+                    /* Адаптация для телефона */
+                     @media(max-width:768px)
+                     { nav a{ display:block; margin:10px; } 
+                     .picture{ width:90%; }
+                      .background-picture{ width:90%; } 
+                    }
+                     /* Для экранов 2К */
+                      @media(min-width:2560px)
+                      { body{ font-size:22px; }
+                       .picture{ width:500px; }
+                     }
